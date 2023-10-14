@@ -1,0 +1,802 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : top
+Version: G-2012.06-SP2
+Date   : Fri Oct 12 06:13:00 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_ff1p25v0c
+Wire Load Model Mode: top
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/CO (FA_X1)                  0.06       1.85 f
+  D_Path/ALU_inst/add_8/U1_27/CO (FA_X1)                  0.06       1.91 f
+  D_Path/ALU_inst/add_8/U1_28/CO (FA_X1)                  0.06       1.97 f
+  D_Path/ALU_inst/add_8/U1_29/CO (FA_X1)                  0.06       2.03 f
+  D_Path/ALU_inst/add_8/U1_30/CO (FA_X1)                  0.06       2.08 f
+  D_Path/ALU_inst/add_8/U1_31/S (FA_X1)                   0.08       2.17 r
+  D_Path/ALU_inst/add_8/SUM[31] (ALU_DW01_add_0)          0.00       2.17 r
+  D_Path/ALU_inst/U18/ZN (AOI22_X1)                       0.03       2.19 f
+  D_Path/ALU_inst/U17/ZN (OAI211_X1)                      0.03       2.23 r
+  D_Path/ALU_inst/aluresult[31] (ALU)                     0.00       2.23 r
+  D_Path/aluresult[31] (data_path)                        0.00       2.23 r
+  aluresult[31] (out)                                     0.00       2.23 r
+  data arrival time                                                  2.23
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.17
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[30]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/CO (FA_X1)                  0.06       1.85 f
+  D_Path/ALU_inst/add_8/U1_27/CO (FA_X1)                  0.06       1.91 f
+  D_Path/ALU_inst/add_8/U1_28/CO (FA_X1)                  0.06       1.97 f
+  D_Path/ALU_inst/add_8/U1_29/CO (FA_X1)                  0.06       2.03 f
+  D_Path/ALU_inst/add_8/U1_30/S (FA_X1)                   0.08       2.11 r
+  D_Path/ALU_inst/add_8/SUM[30] (ALU_DW01_add_0)          0.00       2.11 r
+  D_Path/ALU_inst/U48/ZN (AOI22_X1)                       0.03       2.13 f
+  D_Path/ALU_inst/U47/ZN (OAI211_X1)                      0.03       2.17 r
+  D_Path/ALU_inst/aluresult[30] (ALU)                     0.00       2.17 r
+  D_Path/aluresult[30] (data_path)                        0.00       2.17 r
+  aluresult[30] (out)                                     0.00       2.17 r
+  data arrival time                                                  2.17
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.23
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/CO (FA_X1)                  0.06       1.85 f
+  D_Path/ALU_inst/add_8/U1_27/CO (FA_X1)                  0.06       1.91 f
+  D_Path/ALU_inst/add_8/U1_28/CO (FA_X1)                  0.06       1.97 f
+  D_Path/ALU_inst/add_8/U1_29/S (FA_X1)                   0.08       2.05 r
+  D_Path/ALU_inst/add_8/SUM[29] (ALU_DW01_add_0)          0.00       2.05 r
+  D_Path/ALU_inst/U30/ZN (AOI22_X1)                       0.03       2.08 f
+  D_Path/ALU_inst/U29/ZN (OAI211_X1)                      0.03       2.11 r
+  D_Path/ALU_inst/aluresult[29] (ALU)                     0.00       2.11 r
+  D_Path/aluresult[29] (data_path)                        0.00       2.11 r
+  aluresult[29] (out)                                     0.00       2.11 r
+  data arrival time                                                  2.11
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.29
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[28]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/CO (FA_X1)                  0.06       1.85 f
+  D_Path/ALU_inst/add_8/U1_27/CO (FA_X1)                  0.06       1.91 f
+  D_Path/ALU_inst/add_8/U1_28/S (FA_X1)                   0.08       1.99 r
+  D_Path/ALU_inst/add_8/SUM[28] (ALU_DW01_add_0)          0.00       1.99 r
+  D_Path/ALU_inst/U15/ZN (AOI22_X1)                       0.03       2.02 f
+  D_Path/ALU_inst/U14/ZN (OAI211_X1)                      0.03       2.05 r
+  D_Path/ALU_inst/aluresult[28] (ALU)                     0.00       2.05 r
+  D_Path/aluresult[28] (data_path)                        0.00       2.05 r
+  aluresult[28] (out)                                     0.00       2.05 r
+  data arrival time                                                  2.05
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.35
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[27]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/CO (FA_X1)                  0.06       1.85 f
+  D_Path/ALU_inst/add_8/U1_27/S (FA_X1)                   0.08       1.93 r
+  D_Path/ALU_inst/add_8/SUM[27] (ALU_DW01_add_0)          0.00       1.93 r
+  D_Path/ALU_inst/U45/ZN (AOI22_X1)                       0.03       1.96 f
+  D_Path/ALU_inst/U44/ZN (OAI211_X1)                      0.03       1.99 r
+  D_Path/ALU_inst/aluresult[27] (ALU)                     0.00       1.99 r
+  D_Path/aluresult[27] (data_path)                        0.00       1.99 r
+  aluresult[27] (out)                                     0.00       2.00 r
+  data arrival time                                                  2.00
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.40
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[26]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/CO (FA_X1)                  0.06       1.79 f
+  D_Path/ALU_inst/add_8/U1_26/S (FA_X1)                   0.08       1.88 r
+  D_Path/ALU_inst/add_8/SUM[26] (ALU_DW01_add_0)          0.00       1.88 r
+  D_Path/ALU_inst/U42/ZN (AOI22_X1)                       0.03       1.90 f
+  D_Path/ALU_inst/U41/ZN (OAI211_X1)                      0.03       1.94 r
+  D_Path/ALU_inst/aluresult[26] (ALU)                     0.00       1.94 r
+  D_Path/aluresult[26] (data_path)                        0.00       1.94 r
+  aluresult[26] (out)                                     0.00       1.94 r
+  data arrival time                                                  1.94
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -1.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.46
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[25]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/CO (FA_X1)                  0.06       1.74 f
+  D_Path/ALU_inst/add_8/U1_25/S (FA_X1)                   0.08       1.82 r
+  D_Path/ALU_inst/add_8/SUM[25] (ALU_DW01_add_0)          0.00       1.82 r
+  D_Path/ALU_inst/U27/ZN (AOI22_X1)                       0.03       1.84 f
+  D_Path/ALU_inst/U26/ZN (OAI211_X1)                      0.03       1.88 r
+  D_Path/ALU_inst/aluresult[25] (ALU)                     0.00       1.88 r
+  D_Path/aluresult[25] (data_path)                        0.00       1.88 r
+  aluresult[25] (out)                                     0.00       1.88 r
+  data arrival time                                                  1.88
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -1.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.52
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[24]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/CO (FA_X1)                  0.06       1.68 f
+  D_Path/ALU_inst/add_8/U1_24/S (FA_X1)                   0.08       1.76 r
+  D_Path/ALU_inst/add_8/SUM[24] (ALU_DW01_add_0)          0.00       1.76 r
+  D_Path/ALU_inst/U12/ZN (AOI22_X1)                       0.03       1.79 f
+  D_Path/ALU_inst/U11/ZN (OAI211_X1)                      0.03       1.82 r
+  D_Path/ALU_inst/aluresult[24] (ALU)                     0.00       1.82 r
+  D_Path/aluresult[24] (data_path)                        0.00       1.82 r
+  aluresult[24] (out)                                     0.00       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.58
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[23]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/CO (FA_X1)                  0.06       1.62 f
+  D_Path/ALU_inst/add_8/U1_23/S (FA_X1)                   0.08       1.70 r
+  D_Path/ALU_inst/add_8/SUM[23] (ALU_DW01_add_0)          0.00       1.70 r
+  D_Path/ALU_inst/U39/ZN (AOI22_X1)                       0.03       1.73 f
+  D_Path/ALU_inst/U38/ZN (OAI211_X1)                      0.03       1.76 r
+  D_Path/ALU_inst/aluresult[23] (ALU)                     0.00       1.76 r
+  D_Path/aluresult[23] (data_path)                        0.00       1.76 r
+  aluresult[23] (out)                                     0.00       1.77 r
+  data arrival time                                                  1.77
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -1.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.63
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg[31][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[22]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                5K_hvratio_1_1        NangateOpenCellLibrary_ff1p25v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  D_Path/reg_file_inst/register_reg[31][0]/CK (DFFR_X1)
+                                                          0.00 #     0.00 r
+  D_Path/reg_file_inst/register_reg[31][0]/Q (DFFR_X1)
+                                                          0.06       0.06 f
+  D_Path/reg_file_inst/U3293/Z (MUX2_X1)                  0.04       0.10 f
+  D_Path/reg_file_inst/U3295/Z (MUX2_X1)                  0.04       0.13 f
+  D_Path/reg_file_inst/U3299/Z (MUX2_X1)                  0.04       0.17 f
+  D_Path/reg_file_inst/U3307/Z (MUX2_X1)                  0.04       0.21 f
+  D_Path/reg_file_inst/U3323/Z (MUX2_X1)                  0.04       0.25 f
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       0.25 f
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       0.25 f
+  D_Path/mux2_1_inst/U39/ZN (AOI22_X1)                    0.03       0.28 r
+  D_Path/mux2_1_inst/U38/ZN (INV_X1)                      0.03       0.32 f
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       0.32 f
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       0.32 f
+  D_Path/ALU_inst/add_8/B[0] (ALU_DW01_add_0)             0.00       0.32 f
+  D_Path/ALU_inst/add_8/U2/ZN (AND2_X1)                   0.03       0.35 f
+  D_Path/ALU_inst/add_8/U1_1/CO (FA_X1)                   0.06       0.41 f
+  D_Path/ALU_inst/add_8/U1_2/CO (FA_X1)                   0.06       0.46 f
+  D_Path/ALU_inst/add_8/U1_3/CO (FA_X1)                   0.06       0.52 f
+  D_Path/ALU_inst/add_8/U1_4/CO (FA_X1)                   0.06       0.58 f
+  D_Path/ALU_inst/add_8/U1_5/CO (FA_X1)                   0.06       0.64 f
+  D_Path/ALU_inst/add_8/U1_6/CO (FA_X1)                   0.06       0.69 f
+  D_Path/ALU_inst/add_8/U1_7/CO (FA_X1)                   0.06       0.75 f
+  D_Path/ALU_inst/add_8/U1_8/CO (FA_X1)                   0.06       0.81 f
+  D_Path/ALU_inst/add_8/U1_9/CO (FA_X1)                   0.06       0.87 f
+  D_Path/ALU_inst/add_8/U1_10/CO (FA_X1)                  0.06       0.93 f
+  D_Path/ALU_inst/add_8/U1_11/CO (FA_X1)                  0.06       0.98 f
+  D_Path/ALU_inst/add_8/U1_12/CO (FA_X1)                  0.06       1.04 f
+  D_Path/ALU_inst/add_8/U1_13/CO (FA_X1)                  0.06       1.10 f
+  D_Path/ALU_inst/add_8/U1_14/CO (FA_X1)                  0.06       1.16 f
+  D_Path/ALU_inst/add_8/U1_15/CO (FA_X1)                  0.06       1.22 f
+  D_Path/ALU_inst/add_8/U1_16/CO (FA_X1)                  0.06       1.27 f
+  D_Path/ALU_inst/add_8/U1_17/CO (FA_X1)                  0.06       1.33 f
+  D_Path/ALU_inst/add_8/U1_18/CO (FA_X1)                  0.06       1.39 f
+  D_Path/ALU_inst/add_8/U1_19/CO (FA_X1)                  0.06       1.45 f
+  D_Path/ALU_inst/add_8/U1_20/CO (FA_X1)                  0.06       1.50 f
+  D_Path/ALU_inst/add_8/U1_21/CO (FA_X1)                  0.06       1.56 f
+  D_Path/ALU_inst/add_8/U1_22/S (FA_X1)                   0.08       1.64 r
+  D_Path/ALU_inst/add_8/SUM[22] (ALU_DW01_add_0)          0.00       1.64 r
+  D_Path/ALU_inst/U36/ZN (AOI22_X1)                       0.03       1.67 f
+  D_Path/ALU_inst/U35/ZN (OAI211_X1)                      0.03       1.70 r
+  D_Path/ALU_inst/aluresult[22] (ALU)                     0.00       1.70 r
+  D_Path/aluresult[22] (data_path)                        0.00       1.70 r
+  aluresult[22] (out)                                     0.00       1.71 r
+  data arrival time                                                  1.71
+
+  clock clk (rise edge)                                   6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -2.40       3.40
+  data required time                                                 3.40
+  --------------------------------------------------------------------------
+  data required time                                                 3.40
+  data arrival time                                                 -1.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.69
+
+
+1

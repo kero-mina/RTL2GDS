@@ -1,0 +1,923 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : top
+Version: G-2012.06-ICC-SP2
+Date   : Sun Oct 14 07:35:25 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  0.00%
+
+  Startpoint: D_Path/reg_file_inst/register_reg_23__2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.47       0.47
+  D_Path/reg_file_inst/register_reg_23__2_/CK (DFFR_X1)
+                                                          0.00       0.47 r
+  D_Path/reg_file_inst/register_reg_23__2_/QN (DFFR_X1)
+                                                          0.24       0.71 r
+  D_Path/reg_file_inst/U4930/ZN (INV_X1)                  0.02 &     0.74 f
+  D_Path/reg_file_inst/U3362/Z (MUX2_X1)                  0.21 &     0.95 f
+  D_Path/reg_file_inst/U4811/ZN (NAND2_X1)                0.07 &     1.02 r
+  D_Path/reg_file_inst/U5390/ZN (INV_X1)                  0.03 &     1.05 f
+  D_Path/reg_file_inst/U5389/ZN (OR2_X1)                  0.16 &     1.21 f
+  D_Path/reg_file_inst/U5388/ZN (AND2_X1)                 0.11 &     1.32 f
+  D_Path/reg_file_inst/U5154/ZN (NAND2_X1)                0.05 &     1.38 r
+  D_Path/reg_file_inst/U5155/ZN (NAND2_X1)                0.05 &     1.42 f
+  D_Path/reg_file_inst/U5102/ZN (NAND2_X1)                0.05 &     1.47 r
+  D_Path/reg_file_inst/U5103/ZN (NAND2_X1)                0.04 &     1.51 f
+  D_Path/reg_file_inst/U4787/ZN (NAND2_X1)                0.07 &     1.58 r
+  D_Path/reg_file_inst/U4792/ZN (NAND2_X1)                0.07 &     1.66 f
+  D_Path/reg_file_inst/RD2[2] (regfile_32_bits)           0.00       1.66 f
+  D_Path/mux2_1_inst/in1[2] (mux2_1)                      0.00       1.66 f
+  D_Path/mux2_1_inst/U84/ZN (NAND2_X1)                    0.07 &     1.73 r
+  D_Path/mux2_1_inst/U86/ZN (NAND2_X1)                    0.06 &     1.78 f
+  D_Path/mux2_1_inst/out[2] (mux2_1)                      0.00       1.78 f
+  D_Path/ALU_inst/data2[2] (ALU)                          0.00       1.78 f
+  D_Path/ALU_inst/U310/ZN (INV_X1)                        0.14 &     1.92 r
+  D_Path/ALU_inst/U105/ZN (INV_X8)                        0.04 &     1.97 f
+  D_Path/ALU_inst/add_8/B[2] (ALU_DW01_add_0)             0.00       1.97 f
+  D_Path/ALU_inst/add_8/U175/ZN (NAND2_X1)                0.08 &     2.05 r
+  D_Path/ALU_inst/add_8/U172/ZN (NAND3_X1)                0.09 &     2.14 f
+  D_Path/ALU_inst/add_8/U181/ZN (NAND2_X1)                0.09 &     2.23 r
+  D_Path/ALU_inst/add_8/U354/ZN (NAND3_X1)                0.07 &     2.30 f
+  D_Path/ALU_inst/add_8/U189/ZN (NAND2_X1)                0.07 &     2.36 r
+  D_Path/ALU_inst/add_8/U186/ZN (NAND3_X1)                0.12 &     2.48 f
+  D_Path/ALU_inst/add_8/U196/ZN (NAND2_X1)                0.10 &     2.58 r
+  D_Path/ALU_inst/add_8/U193/ZN (NAND3_X1)                0.08 &     2.66 f
+  D_Path/ALU_inst/add_8/U205/ZN (NAND2_X1)                0.08 &     2.74 r
+  D_Path/ALU_inst/add_8/U12/ZN (NAND3_X1)                 0.08 &     2.81 f
+  D_Path/ALU_inst/add_8/U217/ZN (NAND2_X1)                0.07 &     2.89 r
+  D_Path/ALU_inst/add_8/U214/ZN (NAND3_X1)                0.09 &     2.97 f
+  D_Path/ALU_inst/add_8/U225/ZN (NAND2_X1)                0.08 &     3.05 r
+  D_Path/ALU_inst/add_8/U162/ZN (NAND3_X1)                0.09 &     3.14 f
+  D_Path/ALU_inst/add_8/U235/ZN (NAND2_X1)                0.08 &     3.21 r
+  D_Path/ALU_inst/add_8/U233/ZN (NAND3_X1)                0.08 &     3.29 f
+  D_Path/ALU_inst/add_8/U245/ZN (NAND2_X1)                0.08 &     3.37 r
+  D_Path/ALU_inst/add_8/U3/ZN (NAND3_X1)                  0.08 &     3.45 f
+  D_Path/ALU_inst/add_8/U255/ZN (NAND2_X1)                0.08 &     3.53 r
+  D_Path/ALU_inst/add_8/U160/ZN (NAND3_X1)                0.08 &     3.61 f
+  D_Path/ALU_inst/add_8/U265/ZN (NAND2_X1)                0.07 &     3.68 r
+  D_Path/ALU_inst/add_8/U263/ZN (NAND3_X1)                0.08 &     3.76 f
+  D_Path/ALU_inst/add_8/U276/ZN (NAND2_X1)                0.08 &     3.83 r
+  D_Path/ALU_inst/add_8/U274/ZN (NAND3_X1)                0.08 &     3.91 f
+  D_Path/ALU_inst/add_8/U287/ZN (NAND2_X1)                0.08 &     3.99 r
+  D_Path/ALU_inst/add_8/U285/ZN (NAND3_X1)                0.08 &     4.07 f
+  D_Path/ALU_inst/add_8/U297/ZN (NAND2_X1)                0.07 &     4.14 r
+  D_Path/ALU_inst/add_8/U295/ZN (NAND3_X1)                0.08 &     4.22 f
+  D_Path/ALU_inst/add_8/U308/ZN (NAND2_X1)                0.08 &     4.30 r
+  D_Path/ALU_inst/add_8/U306/ZN (NAND3_X1)                0.08 &     4.38 f
+  D_Path/ALU_inst/add_8/U319/ZN (NAND2_X1)                0.08 &     4.46 r
+  D_Path/ALU_inst/add_8/U158/ZN (NAND3_X1)                0.08 &     4.54 f
+  D_Path/ALU_inst/add_8/U329/ZN (NAND2_X1)                0.08 &     4.61 r
+  D_Path/ALU_inst/add_8/U332/ZN (NAND3_X1)                0.08 &     4.70 f
+  D_Path/ALU_inst/add_8/U339/ZN (NAND2_X1)                0.08 &     4.77 r
+  D_Path/ALU_inst/add_8/U20/ZN (NAND3_X1)                 0.08 &     4.86 f
+  D_Path/ALU_inst/add_8/U128/ZN (NAND2_X1)                0.08 &     4.93 r
+  D_Path/ALU_inst/add_8/U16/ZN (NAND3_X1)                 0.09 &     5.02 f
+  D_Path/ALU_inst/add_8/U138/ZN (NAND2_X1)                0.08 &     5.10 r
+  D_Path/ALU_inst/add_8/U164/ZN (NAND3_X1)                0.08 &     5.18 f
+  D_Path/ALU_inst/add_8/U148/ZN (NAND2_X1)                0.08 &     5.26 r
+  D_Path/ALU_inst/add_8/U40/ZN (NAND3_X1)                 0.08 &     5.34 f
+  D_Path/ALU_inst/add_8/U77/ZN (NAND2_X1)                 0.08 &     5.42 r
+  D_Path/ALU_inst/add_8/U353/ZN (NAND3_X1)                0.08 &     5.50 f
+  D_Path/ALU_inst/add_8/U87/ZN (NAND2_X1)                 0.08 &     5.58 r
+  D_Path/ALU_inst/add_8/U85/ZN (NAND3_X1)                 0.08 &     5.66 f
+  D_Path/ALU_inst/add_8/U98/ZN (NAND2_X1)                 0.08 &     5.74 r
+  D_Path/ALU_inst/add_8/U96/ZN (NAND3_X1)                 0.08 &     5.82 f
+  D_Path/ALU_inst/add_8/U108/ZN (NAND2_X1)                0.07 &     5.89 r
+  D_Path/ALU_inst/add_8/U106/ZN (NAND3_X1)                0.08 &     5.97 f
+  D_Path/ALU_inst/add_8/U118/ZN (NAND2_X1)                0.07 &     6.04 r
+  D_Path/ALU_inst/add_8/U26/ZN (NAND3_X1)                 0.08 &     6.12 f
+  D_Path/ALU_inst/add_8/U65/ZN (NAND2_X1)                 0.08 &     6.20 r
+  D_Path/ALU_inst/add_8/U27/ZN (NAND3_X1)                 0.08 &     6.28 f
+  D_Path/ALU_inst/add_8/U45/ZN (NAND2_X1)                 0.08 &     6.35 r
+  D_Path/ALU_inst/add_8/U48/ZN (NAND3_X1)                 0.08 &     6.44 f
+  D_Path/ALU_inst/add_8/U55/ZN (NAND2_X1)                 0.06 &     6.50 r
+  D_Path/ALU_inst/add_8/U31/ZN (NAND3_X1)                 0.07 &     6.57 f
+  D_Path/ALU_inst/add_8/U350/ZN (INV_X1)                  0.05 &     6.63 r
+  D_Path/ALU_inst/add_8/U348/ZN (NAND2_X1)                0.04 &     6.66 f
+  D_Path/ALU_inst/add_8/U349/ZN (NAND2_X1)                0.06 &     6.73 r
+  D_Path/ALU_inst/add_8/SUM[31] (ALU_DW01_add_0)          0.00       6.73 r
+  D_Path/ALU_inst/U18/ZN (AOI22_X1)                       0.05 &     6.78 f
+  D_Path/ALU_inst/U227/ZN (NAND2_X1)                      0.25 &     7.03 r
+  D_Path/ALU_inst/aluresult[31] (ALU)                     0.00       7.03 r
+  D_Path/aluresult[31] (data_path)                        0.00       7.03 r
+  aluresult[31] (out)                                     0.00 &     7.03 r
+  data arrival time                                                  7.03
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.40       7.40
+  data required time                                                 7.40
+  --------------------------------------------------------------------------
+  data required time                                                 7.40
+  data arrival time                                                 -7.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_6__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/CO (FA_X1)        0.30 &     8.70 f
+  D_Path/adder_inst_pcplus4/add_4/U4/ZN (NAND2_X1)        0.07 &     8.76 r
+  D_Path/adder_inst_pcplus4/add_4/U20/ZN (NAND3_X1)       0.07 &     8.83 f
+  D_Path/adder_inst_pcplus4/add_4/U17/ZN (INV_X1)         0.05 &     8.88 r
+  D_Path/adder_inst_pcplus4/add_4/U15/ZN (NAND2_X1)       0.04 &     8.92 f
+  D_Path/adder_inst_pcplus4/add_4/U16/ZN (NAND2_X1)       0.06 &     8.98 r
+  D_Path/adder_inst_pcplus4/add_4/SUM[31] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.98 r
+  D_Path/adder_inst_pcplus4/out[31] (adder_32_bits_0)     0.00       8.98 r
+  D_Path/mux3_1_inst/in3[31] (mux3_1_1)                   0.00       8.98 r
+  D_Path/mux3_1_inst/U18/ZN (INV_X1)                      0.03 &     9.01 f
+  D_Path/mux3_1_inst/U22/ZN (OAI222_X1)                   0.13 &     9.14 r
+  D_Path/mux3_1_inst/y[31] (mux3_1_1)                     0.00       9.14 r
+  D_Path/reg_file_inst/WD3[31] (regfile_32_bits)          0.00       9.14 r
+  D_Path/reg_file_inst/U5193/ZN (INV_X1)                  0.05 &     9.19 f
+  D_Path/reg_file_inst/U5189/ZN (INV_X1)                  0.16 &     9.34 r
+  D_Path/reg_file_inst/U4763/ZN (INV_X8)                  0.08 &     9.43 f
+  D_Path/reg_file_inst/U528/ZN (OAI21_X1)                 0.12 &     9.55 r
+  D_Path/reg_file_inst/register_reg_6__31_/D (DFFR_X1)
+                                                          0.00 &     9.56 r
+  data arrival time                                                  9.56
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.34      10.34
+  clock uncertainty                                      -0.20      10.14
+  D_Path/reg_file_inst/register_reg_6__31_/CK (DFFR_X1)
+                                                          0.00      10.14 r
+  library setup time                                     -0.08      10.06
+  data required time                                                10.06
+  --------------------------------------------------------------------------
+  data required time                                                10.06
+  data arrival time                                                 -9.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_20__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/CO (FA_X1)        0.30 &     8.70 f
+  D_Path/adder_inst_pcplus4/add_4/U4/ZN (NAND2_X1)        0.07 &     8.76 r
+  D_Path/adder_inst_pcplus4/add_4/U20/ZN (NAND3_X1)       0.07 &     8.83 f
+  D_Path/adder_inst_pcplus4/add_4/U17/ZN (INV_X1)         0.05 &     8.88 r
+  D_Path/adder_inst_pcplus4/add_4/U15/ZN (NAND2_X1)       0.04 &     8.92 f
+  D_Path/adder_inst_pcplus4/add_4/U16/ZN (NAND2_X1)       0.06 &     8.98 r
+  D_Path/adder_inst_pcplus4/add_4/SUM[31] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.98 r
+  D_Path/adder_inst_pcplus4/out[31] (adder_32_bits_0)     0.00       8.98 r
+  D_Path/mux3_1_inst/in3[31] (mux3_1_1)                   0.00       8.98 r
+  D_Path/mux3_1_inst/U18/ZN (INV_X1)                      0.03 &     9.01 f
+  D_Path/mux3_1_inst/U22/ZN (OAI222_X1)                   0.13 &     9.14 r
+  D_Path/mux3_1_inst/y[31] (mux3_1_1)                     0.00       9.14 r
+  D_Path/reg_file_inst/WD3[31] (regfile_32_bits)          0.00       9.14 r
+  D_Path/reg_file_inst/U5193/ZN (INV_X1)                  0.05 &     9.19 f
+  D_Path/reg_file_inst/U5189/ZN (INV_X1)                  0.16 &     9.34 r
+  D_Path/reg_file_inst/U4763/ZN (INV_X8)                  0.08 &     9.43 f
+  D_Path/reg_file_inst/U332/ZN (OAI21_X1)                 0.11 &     9.54 r
+  D_Path/reg_file_inst/register_reg_20__31_/D (DFFR_X1)
+                                                          0.00 &     9.54 r
+  data arrival time                                                  9.54
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.34      10.34
+  clock uncertainty                                      -0.20      10.14
+  D_Path/reg_file_inst/register_reg_20__31_/CK (DFFR_X1)
+                                                          0.00      10.14 r
+  library setup time                                     -0.07      10.06
+  data required time                                                10.06
+  --------------------------------------------------------------------------
+  data required time                                                10.06
+  data arrival time                                                 -9.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_26__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/CO (FA_X1)        0.30 &     8.70 f
+  D_Path/adder_inst_pcplus4/add_4/U4/ZN (NAND2_X1)        0.07 &     8.76 r
+  D_Path/adder_inst_pcplus4/add_4/U20/ZN (NAND3_X1)       0.07 &     8.83 f
+  D_Path/adder_inst_pcplus4/add_4/U17/ZN (INV_X1)         0.05 &     8.88 r
+  D_Path/adder_inst_pcplus4/add_4/U15/ZN (NAND2_X1)       0.04 &     8.92 f
+  D_Path/adder_inst_pcplus4/add_4/U16/ZN (NAND2_X1)       0.06 &     8.98 r
+  D_Path/adder_inst_pcplus4/add_4/SUM[31] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.98 r
+  D_Path/adder_inst_pcplus4/out[31] (adder_32_bits_0)     0.00       8.98 r
+  D_Path/mux3_1_inst/in3[31] (mux3_1_1)                   0.00       8.98 r
+  D_Path/mux3_1_inst/U18/ZN (INV_X1)                      0.03 &     9.01 f
+  D_Path/mux3_1_inst/U22/ZN (OAI222_X1)                   0.13 &     9.14 r
+  D_Path/mux3_1_inst/y[31] (mux3_1_1)                     0.00       9.14 r
+  D_Path/reg_file_inst/WD3[31] (regfile_32_bits)          0.00       9.14 r
+  D_Path/reg_file_inst/U5193/ZN (INV_X1)                  0.05 &     9.19 f
+  D_Path/reg_file_inst/U5189/ZN (INV_X1)                  0.16 &     9.34 r
+  D_Path/reg_file_inst/U4763/ZN (INV_X8)                  0.08 &     9.43 f
+  D_Path/reg_file_inst/U248/ZN (OAI21_X1)                 0.11 &     9.54 r
+  D_Path/reg_file_inst/register_reg_26__31_/D (DFFR_X1)
+                                                          0.00 &     9.54 r
+  data arrival time                                                  9.54
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.34      10.34
+  clock uncertainty                                      -0.20      10.14
+  D_Path/reg_file_inst/register_reg_26__31_/CK (DFFR_X1)
+                                                          0.00      10.14 r
+  library setup time                                     -0.07      10.06
+  data required time                                                10.06
+  --------------------------------------------------------------------------
+  data required time                                                10.06
+  data arrival time                                                 -9.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_23__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/CO (FA_X1)        0.30 &     8.70 f
+  D_Path/adder_inst_pcplus4/add_4/U4/ZN (NAND2_X1)        0.07 &     8.76 r
+  D_Path/adder_inst_pcplus4/add_4/U20/ZN (NAND3_X1)       0.07 &     8.83 f
+  D_Path/adder_inst_pcplus4/add_4/U17/ZN (INV_X1)         0.05 &     8.88 r
+  D_Path/adder_inst_pcplus4/add_4/U15/ZN (NAND2_X1)       0.04 &     8.92 f
+  D_Path/adder_inst_pcplus4/add_4/U16/ZN (NAND2_X1)       0.06 &     8.98 r
+  D_Path/adder_inst_pcplus4/add_4/SUM[31] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.98 r
+  D_Path/adder_inst_pcplus4/out[31] (adder_32_bits_0)     0.00       8.98 r
+  D_Path/mux3_1_inst/in3[31] (mux3_1_1)                   0.00       8.98 r
+  D_Path/mux3_1_inst/U18/ZN (INV_X1)                      0.03 &     9.01 f
+  D_Path/mux3_1_inst/U22/ZN (OAI222_X1)                   0.13 &     9.14 r
+  D_Path/mux3_1_inst/y[31] (mux3_1_1)                     0.00       9.14 r
+  D_Path/reg_file_inst/WD3[31] (regfile_32_bits)          0.00       9.14 r
+  D_Path/reg_file_inst/U5193/ZN (INV_X1)                  0.05 &     9.19 f
+  D_Path/reg_file_inst/U5189/ZN (INV_X1)                  0.16 &     9.34 r
+  D_Path/reg_file_inst/U4763/ZN (INV_X8)                  0.08 &     9.43 f
+  D_Path/reg_file_inst/U290/ZN (OAI21_X1)                 0.11 &     9.54 r
+  D_Path/reg_file_inst/register_reg_23__31_/D (DFFR_X1)
+                                                          0.00 &     9.54 r
+  data arrival time                                                  9.54
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.34      10.34
+  clock uncertainty                                      -0.20      10.14
+  D_Path/reg_file_inst/register_reg_23__31_/CK (DFFR_X1)
+                                                          0.00      10.14 r
+  library setup time                                     -0.07      10.06
+  data required time                                                10.06
+  --------------------------------------------------------------------------
+  data required time                                                10.06
+  data arrival time                                                 -9.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.53
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg_29__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[30]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.36       0.36
+  D_Path/reg_file_inst/register_reg_29__0_/CK (DFFR_X1)
+                                                          0.00       0.36 r
+  D_Path/reg_file_inst/register_reg_29__0_/QN (DFFR_X1)
+                                                          0.26       0.62 f
+  D_Path/reg_file_inst/U4908/Z (MUX2_X1)                  0.23 &     0.85 f
+  D_Path/reg_file_inst/U4914/ZN (INV_X1)                  0.05 &     0.91 r
+  D_Path/reg_file_inst/U4759/ZN (NAND2_X1)                0.04 &     0.94 f
+  D_Path/reg_file_inst/U4760/ZN (NAND2_X1)                0.06 &     1.00 r
+  D_Path/reg_file_inst/U5091/ZN (NAND2_X1)                0.04 &     1.04 f
+  D_Path/reg_file_inst/U5093/ZN (NAND2_X1)                0.07 &     1.11 r
+  D_Path/reg_file_inst/U4918/ZN (NAND2_X1)                0.05 &     1.15 f
+  D_Path/reg_file_inst/U5068/ZN (AND2_X1)                 0.10 &     1.25 f
+  D_Path/reg_file_inst/U5049/ZN (NAND2_X1)                0.05 &     1.31 r
+  D_Path/reg_file_inst/U5054/ZN (NAND2_X1)                0.04 &     1.35 f
+  D_Path/reg_file_inst/U4773/ZN (INV_X1)                  0.04 &     1.38 r
+  D_Path/reg_file_inst/U4770/ZN (NAND2_X1)                0.04 &     1.42 f
+  D_Path/reg_file_inst/U4772/ZN (NAND2_X1)                0.05 &     1.47 r
+  D_Path/reg_file_inst/U5190/ZN (NAND2_X1)                0.04 &     1.51 f
+  D_Path/reg_file_inst/U4947/ZN (NAND2_X1)                0.13 &     1.64 r
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       1.64 r
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       1.64 r
+  D_Path/mux2_1_inst/U89/ZN (NAND2_X1)                    0.09 &     1.73 f
+  D_Path/mux2_1_inst/U91/ZN (NAND2_X1)                    0.16 &     1.89 r
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       1.89 r
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       1.89 r
+  D_Path/ALU_inst/sub_9/B[0] (ALU_DW01_sub_0)             0.00       1.89 r
+  D_Path/ALU_inst/sub_9/U177/ZN (NAND2_X1)                0.07 &     1.96 f
+  D_Path/ALU_inst/sub_9/U183/ZN (NAND2_X1)                0.08 &     2.04 r
+  D_Path/ALU_inst/sub_9/U179/ZN (NAND3_X1)                0.08 &     2.11 f
+  D_Path/ALU_inst/sub_9/U189/ZN (NAND2_X1)                0.07 &     2.18 r
+  D_Path/ALU_inst/sub_9/U186/ZN (NAND3_X1)                0.07 &     2.26 f
+  D_Path/ALU_inst/sub_9/U196/ZN (NAND2_X1)                0.07 &     2.33 r
+  D_Path/ALU_inst/sub_9/U193/ZN (NAND3_X1)                0.08 &     2.41 f
+  D_Path/ALU_inst/sub_9/U203/ZN (NAND2_X1)                0.08 &     2.48 r
+  D_Path/ALU_inst/sub_9/U176/ZN (NAND3_X1)                0.06 &     2.54 f
+  D_Path/ALU_inst/sub_9/U210/ZN (NAND2_X1)                0.07 &     2.61 r
+  D_Path/ALU_inst/sub_9/U207/ZN (NAND3_X1)                0.08 &     2.69 f
+  D_Path/ALU_inst/sub_9/U217/ZN (NAND2_X1)                0.08 &     2.77 r
+  D_Path/ALU_inst/sub_9/U162/ZN (NAND3_X1)                0.08 &     2.85 f
+  D_Path/ALU_inst/sub_9/U227/ZN (NAND2_X1)                0.08 &     2.93 r
+  D_Path/ALU_inst/sub_9/U158/ZN (NAND3_X1)                0.08 &     3.01 f
+  D_Path/ALU_inst/sub_9/U236/ZN (NAND2_X1)                0.08 &     3.09 r
+  D_Path/ALU_inst/sub_9/U46/ZN (NAND3_X1)                 0.08 &     3.17 f
+  D_Path/ALU_inst/sub_9/U246/ZN (NAND2_X1)                0.08 &     3.24 r
+  D_Path/ALU_inst/sub_9/U243/ZN (NAND3_X1)                0.08 &     3.33 f
+  D_Path/ALU_inst/sub_9/U257/ZN (NAND2_X1)                0.08 &     3.40 r
+  D_Path/ALU_inst/sub_9/U254/ZN (NAND3_X1)                0.08 &     3.48 f
+  D_Path/ALU_inst/sub_9/U268/ZN (NAND2_X1)                0.07 &     3.55 r
+  D_Path/ALU_inst/sub_9/U265/ZN (NAND3_X1)                0.08 &     3.63 f
+  D_Path/ALU_inst/sub_9/U278/ZN (NAND2_X1)                0.08 &     3.71 r
+  D_Path/ALU_inst/sub_9/U54/ZN (NAND3_X1)                 0.08 &     3.79 f
+  D_Path/ALU_inst/sub_9/U288/ZN (NAND2_X1)                0.07 &     3.86 r
+  D_Path/ALU_inst/sub_9/U61/ZN (NAND3_X1)                 0.08 &     3.94 f
+  D_Path/ALU_inst/sub_9/U299/ZN (NAND2_X1)                0.07 &     4.01 r
+  D_Path/ALU_inst/sub_9/U64/ZN (NAND3_X1)                 0.08 &     4.09 f
+  D_Path/ALU_inst/sub_9/U309/ZN (NAND2_X1)                0.07 &     4.16 r
+  D_Path/ALU_inst/sub_9/U65/ZN (NAND3_X1)                 0.08 &     4.24 f
+  D_Path/ALU_inst/sub_9/U320/ZN (NAND2_X1)                0.07 &     4.31 r
+  D_Path/ALU_inst/sub_9/U63/ZN (NAND3_X1)                 0.08 &     4.39 f
+  D_Path/ALU_inst/sub_9/U331/ZN (NAND2_X1)                0.07 &     4.46 r
+  D_Path/ALU_inst/sub_9/U62/ZN (NAND3_X1)                 0.08 &     4.55 f
+  D_Path/ALU_inst/sub_9/U341/ZN (NAND2_X1)                0.08 &     4.63 r
+  D_Path/ALU_inst/sub_9/U66/ZN (NAND3_X1)                 0.08 &     4.70 f
+  D_Path/ALU_inst/sub_9/U352/ZN (NAND2_X1)                0.08 &     4.78 r
+  D_Path/ALU_inst/sub_9/U75/ZN (NAND3_X1)                 0.07 &     4.85 f
+  D_Path/ALU_inst/sub_9/U159/ZN (NAND2_X1)                0.07 &     4.92 r
+  D_Path/ALU_inst/sub_9/U45/ZN (NAND3_X1)                 0.07 &     5.00 f
+  D_Path/ALU_inst/sub_9/U165/ZN (NAND2_X1)                0.08 &     5.07 r
+  D_Path/ALU_inst/sub_9/U73/ZN (NAND3_X1)                 0.08 &     5.15 f
+  D_Path/ALU_inst/sub_9/U78/ZN (NAND2_X1)                 0.08 &     5.23 r
+  D_Path/ALU_inst/sub_9/U81/ZN (NAND3_X1)                 0.08 &     5.32 f
+  D_Path/ALU_inst/sub_9/U84/ZN (NAND2_X1)                 0.08 &     5.39 r
+  D_Path/ALU_inst/sub_9/U44/ZN (NAND3_X1)                 0.08 &     5.47 f
+  D_Path/ALU_inst/sub_9/U95/ZN (NAND2_X1)                 0.08 &     5.55 r
+  D_Path/ALU_inst/sub_9/U199/ZN (NAND3_X1)                0.08 &     5.63 f
+  D_Path/ALU_inst/sub_9/U104/ZN (NAND2_X1)                0.08 &     5.71 r
+  D_Path/ALU_inst/sub_9/U49/ZN (NAND3_X1)                 0.08 &     5.79 f
+  D_Path/ALU_inst/sub_9/U113/ZN (NAND2_X1)                0.08 &     5.87 r
+  D_Path/ALU_inst/sub_9/U182/ZN (NAND3_X1)                0.08 &     5.95 f
+  D_Path/ALU_inst/sub_9/U123/ZN (NAND2_X1)                0.08 &     6.02 r
+  D_Path/ALU_inst/sub_9/U126/ZN (NAND3_X1)                0.08 &     6.11 f
+  D_Path/ALU_inst/sub_9/U134/ZN (NAND2_X1)                0.08 &     6.18 r
+  D_Path/ALU_inst/sub_9/U132/ZN (NAND3_X1)                0.08 &     6.26 f
+  D_Path/ALU_inst/sub_9/U148/ZN (NAND2_X1)                0.08 &     6.34 r
+  D_Path/ALU_inst/sub_9/U178/ZN (NAND3_X1)                0.08 &     6.42 f
+  D_Path/ALU_inst/sub_9/U149/ZN (XNOR2_X1)                0.13 &     6.55 f
+  D_Path/ALU_inst/sub_9/U151/ZN (INV_X1)                  0.05 &     6.60 r
+  D_Path/ALU_inst/sub_9/DIFF[30] (ALU_DW01_sub_0)         0.00       6.60 r
+  D_Path/ALU_inst/U48/ZN (AOI22_X1)                       0.04 &     6.64 f
+  D_Path/ALU_inst/U47/ZN (NAND2_X1)                       0.20 &     6.84 r
+  D_Path/ALU_inst/aluresult[30] (ALU)                     0.00       6.84 r
+  D_Path/aluresult[30] (data_path)                        0.00       6.84 r
+  aluresult[30] (out)                                     0.00 &     6.84 r
+  data arrival time                                                  6.84
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.40       7.40
+  data required time                                                 7.40
+  --------------------------------------------------------------------------
+  data required time                                                 7.40
+  data arrival time                                                 -6.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_12__29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/S (FA_X1)         0.36 &     8.76 f
+  D_Path/adder_inst_pcplus4/add_4/SUM[29] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.76 f
+  D_Path/adder_inst_pcplus4/out[29] (adder_32_bits_0)     0.00       8.76 f
+  D_Path/mux3_1_inst/in3[29] (mux3_1_1)                   0.00       8.76 f
+  D_Path/mux3_1_inst/U33/ZN (AOI222_X1)                   0.23 &     8.99 r
+  D_Path/mux3_1_inst/y[29] (mux3_1_1)                     0.00       8.99 r
+  D_Path/U70/ZN (INV_X1)                                  0.05 &     9.04 f
+  D_Path/U88/ZN (INV_X1)                                  0.13 &     9.17 r
+  D_Path/reg_file_inst/WD3[29] (regfile_32_bits)          0.00       9.17 r
+  D_Path/reg_file_inst/U5435/ZN (INV_X1)                  0.13 &     9.29 f
+  D_Path/reg_file_inst/U5434/ZN (INV_X8)                  0.10 &     9.39 r
+  D_Path/reg_file_inst/U442/ZN (OAI21_X1)                 0.05 &     9.44 f
+  D_Path/reg_file_inst/register_reg_12__29_/D (DFFR_X1)
+                                                          0.00 &     9.44 f
+  data arrival time                                                  9.44
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.42      10.42
+  clock uncertainty                                      -0.20      10.22
+  D_Path/reg_file_inst/register_reg_12__29_/CK (DFFR_X1)
+                                                          0.00      10.22 r
+  library setup time                                     -0.14      10.08
+  data required time                                                10.08
+  --------------------------------------------------------------------------
+  data required time                                                10.08
+  data arrival time                                                 -9.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_13__29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/S (FA_X1)         0.36 &     8.76 f
+  D_Path/adder_inst_pcplus4/add_4/SUM[29] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.76 f
+  D_Path/adder_inst_pcplus4/out[29] (adder_32_bits_0)     0.00       8.76 f
+  D_Path/mux3_1_inst/in3[29] (mux3_1_1)                   0.00       8.76 f
+  D_Path/mux3_1_inst/U33/ZN (AOI222_X1)                   0.23 &     8.99 r
+  D_Path/mux3_1_inst/y[29] (mux3_1_1)                     0.00       8.99 r
+  D_Path/U70/ZN (INV_X1)                                  0.05 &     9.04 f
+  D_Path/U88/ZN (INV_X1)                                  0.13 &     9.17 r
+  D_Path/reg_file_inst/WD3[29] (regfile_32_bits)          0.00       9.17 r
+  D_Path/reg_file_inst/U5435/ZN (INV_X1)                  0.13 &     9.29 f
+  D_Path/reg_file_inst/U5436/ZN (INV_X8)                  0.09 &     9.39 r
+  D_Path/reg_file_inst/U428/ZN (OAI21_X1)                 0.04 &     9.43 f
+  D_Path/reg_file_inst/register_reg_13__29_/D (DFFR_X1)
+                                                          0.00 &     9.43 f
+  data arrival time                                                  9.43
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.42      10.42
+  clock uncertainty                                      -0.20      10.22
+  D_Path/reg_file_inst/register_reg_13__29_/CK (DFFR_X1)
+                                                          0.00      10.22 r
+  library setup time                                     -0.15      10.07
+  data required time                                                10.07
+  --------------------------------------------------------------------------
+  data required time                                                10.07
+  data arrival time                                                 -9.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: D_Path/pc_reg_inst/pc_out_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_Path/reg_file_inst/register_reg_24__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.42       0.42
+  D_Path/pc_reg_inst/pc_out_reg_2_/CK (DFFR_X1)           0.00       0.42 r
+  D_Path/pc_reg_inst/pc_out_reg_2_/Q (DFFR_X1)            0.36       0.78 f
+  D_Path/pc_reg_inst/pc_out[2] (register_32_bits)         0.00       0.78 f
+  D_Path/adder_inst_pcplus4/in1[2] (adder_32_bits_0)      0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/A[2] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       0.78 f
+  D_Path/adder_inst_pcplus4/add_4/U1_2/CO (FA_X1)         0.30 &     1.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_3/CO (FA_X1)         0.28 &     1.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_4/CO (FA_X1)         0.28 &     1.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_5/CO (FA_X1)         0.28 &     1.91 f
+  D_Path/adder_inst_pcplus4/add_4/U1_6/CO (FA_X1)         0.28 &     2.19 f
+  D_Path/adder_inst_pcplus4/add_4/U1_7/CO (FA_X1)         0.28 &     2.47 f
+  D_Path/adder_inst_pcplus4/add_4/U1_8/CO (FA_X1)         0.28 &     2.76 f
+  D_Path/adder_inst_pcplus4/add_4/U1_9/CO (FA_X1)         0.32 &     3.08 f
+  D_Path/adder_inst_pcplus4/add_4/U1_10/CO (FA_X1)        0.29 &     3.36 f
+  D_Path/adder_inst_pcplus4/add_4/U1_11/CO (FA_X1)        0.28 &     3.64 f
+  D_Path/adder_inst_pcplus4/add_4/U1_12/CO (FA_X1)        0.28 &     3.92 f
+  D_Path/adder_inst_pcplus4/add_4/U1_13/CO (FA_X1)        0.28 &     4.20 f
+  D_Path/adder_inst_pcplus4/add_4/U1_14/CO (FA_X1)        0.28 &     4.48 f
+  D_Path/adder_inst_pcplus4/add_4/U1_15/CO (FA_X1)        0.28 &     4.75 f
+  D_Path/adder_inst_pcplus4/add_4/U1_16/CO (FA_X1)        0.28 &     5.03 f
+  D_Path/adder_inst_pcplus4/add_4/U1_17/CO (FA_X1)        0.28 &     5.31 f
+  D_Path/adder_inst_pcplus4/add_4/U1_18/CO (FA_X1)        0.28 &     5.59 f
+  D_Path/adder_inst_pcplus4/add_4/U1_19/CO (FA_X1)        0.29 &     5.88 f
+  D_Path/adder_inst_pcplus4/add_4/U1_20/CO (FA_X1)        0.28 &     6.16 f
+  D_Path/adder_inst_pcplus4/add_4/U1_21/CO (FA_X1)        0.28 &     6.44 f
+  D_Path/adder_inst_pcplus4/add_4/U1_22/CO (FA_X1)        0.28 &     6.72 f
+  D_Path/adder_inst_pcplus4/add_4/U1_23/CO (FA_X1)        0.28 &     7.00 f
+  D_Path/adder_inst_pcplus4/add_4/U1_24/CO (FA_X1)        0.28 &     7.28 f
+  D_Path/adder_inst_pcplus4/add_4/U1_25/CO (FA_X1)        0.28 &     7.56 f
+  D_Path/adder_inst_pcplus4/add_4/U1_26/CO (FA_X1)        0.28 &     7.84 f
+  D_Path/adder_inst_pcplus4/add_4/U1_27/CO (FA_X1)        0.28 &     8.12 f
+  D_Path/adder_inst_pcplus4/add_4/U1_28/CO (FA_X1)        0.28 &     8.40 f
+  D_Path/adder_inst_pcplus4/add_4/U1_29/CO (FA_X1)        0.30 &     8.70 f
+  D_Path/adder_inst_pcplus4/add_4/U4/ZN (NAND2_X1)        0.07 &     8.76 r
+  D_Path/adder_inst_pcplus4/add_4/U20/ZN (NAND3_X1)       0.07 &     8.83 f
+  D_Path/adder_inst_pcplus4/add_4/U17/ZN (INV_X1)         0.05 &     8.88 r
+  D_Path/adder_inst_pcplus4/add_4/U15/ZN (NAND2_X1)       0.04 &     8.92 f
+  D_Path/adder_inst_pcplus4/add_4/U16/ZN (NAND2_X1)       0.06 &     8.98 r
+  D_Path/adder_inst_pcplus4/add_4/SUM[31] (adder_32_bits_0_DW01_add_0)
+                                                          0.00       8.98 r
+  D_Path/adder_inst_pcplus4/out[31] (adder_32_bits_0)     0.00       8.98 r
+  D_Path/mux3_1_inst/in3[31] (mux3_1_1)                   0.00       8.98 r
+  D_Path/mux3_1_inst/U18/ZN (INV_X1)                      0.03 &     9.01 f
+  D_Path/mux3_1_inst/U22/ZN (OAI222_X1)                   0.13 &     9.14 r
+  D_Path/mux3_1_inst/y[31] (mux3_1_1)                     0.00       9.14 r
+  D_Path/reg_file_inst/WD3[31] (regfile_32_bits)          0.00       9.14 r
+  D_Path/reg_file_inst/U5193/ZN (INV_X1)                  0.05 &     9.19 f
+  D_Path/reg_file_inst/U5189/ZN (INV_X1)                  0.16 &     9.34 r
+  D_Path/reg_file_inst/U4763/ZN (INV_X8)                  0.08 &     9.43 f
+  D_Path/reg_file_inst/U276/ZN (OAI21_X1)                 0.11 &     9.54 r
+  D_Path/reg_file_inst/register_reg_24__31_/D (DFFR_X1)
+                                                          0.00 &     9.54 r
+  data arrival time                                                  9.54
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.47      10.47
+  clock uncertainty                                      -0.20      10.27
+  D_Path/reg_file_inst/register_reg_24__31_/CK (DFFR_X1)
+                                                          0.00      10.27 r
+  library setup time                                     -0.08      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                 -9.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+  Startpoint: D_Path/reg_file_inst/register_reg_29__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: aluresult[29]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.36       0.36
+  D_Path/reg_file_inst/register_reg_29__0_/CK (DFFR_X1)
+                                                          0.00       0.36 r
+  D_Path/reg_file_inst/register_reg_29__0_/QN (DFFR_X1)
+                                                          0.26       0.62 f
+  D_Path/reg_file_inst/U4908/Z (MUX2_X1)                  0.23 &     0.85 f
+  D_Path/reg_file_inst/U4914/ZN (INV_X1)                  0.05 &     0.91 r
+  D_Path/reg_file_inst/U4759/ZN (NAND2_X1)                0.04 &     0.94 f
+  D_Path/reg_file_inst/U4760/ZN (NAND2_X1)                0.06 &     1.00 r
+  D_Path/reg_file_inst/U5091/ZN (NAND2_X1)                0.04 &     1.04 f
+  D_Path/reg_file_inst/U5093/ZN (NAND2_X1)                0.07 &     1.11 r
+  D_Path/reg_file_inst/U4918/ZN (NAND2_X1)                0.05 &     1.15 f
+  D_Path/reg_file_inst/U5068/ZN (AND2_X1)                 0.10 &     1.25 f
+  D_Path/reg_file_inst/U5049/ZN (NAND2_X1)                0.05 &     1.31 r
+  D_Path/reg_file_inst/U5054/ZN (NAND2_X1)                0.04 &     1.35 f
+  D_Path/reg_file_inst/U4773/ZN (INV_X1)                  0.04 &     1.38 r
+  D_Path/reg_file_inst/U4770/ZN (NAND2_X1)                0.04 &     1.42 f
+  D_Path/reg_file_inst/U4772/ZN (NAND2_X1)                0.05 &     1.47 r
+  D_Path/reg_file_inst/U5190/ZN (NAND2_X1)                0.04 &     1.51 f
+  D_Path/reg_file_inst/U4947/ZN (NAND2_X1)                0.13 &     1.64 r
+  D_Path/reg_file_inst/RD2[0] (regfile_32_bits)           0.00       1.64 r
+  D_Path/mux2_1_inst/in1[0] (mux2_1)                      0.00       1.64 r
+  D_Path/mux2_1_inst/U89/ZN (NAND2_X1)                    0.09 &     1.73 f
+  D_Path/mux2_1_inst/U91/ZN (NAND2_X1)                    0.16 &     1.89 r
+  D_Path/mux2_1_inst/out[0] (mux2_1)                      0.00       1.89 r
+  D_Path/ALU_inst/data2[0] (ALU)                          0.00       1.89 r
+  D_Path/ALU_inst/sub_9/B[0] (ALU_DW01_sub_0)             0.00       1.89 r
+  D_Path/ALU_inst/sub_9/U177/ZN (NAND2_X1)                0.07 &     1.96 f
+  D_Path/ALU_inst/sub_9/U183/ZN (NAND2_X1)                0.08 &     2.04 r
+  D_Path/ALU_inst/sub_9/U179/ZN (NAND3_X1)                0.08 &     2.11 f
+  D_Path/ALU_inst/sub_9/U189/ZN (NAND2_X1)                0.07 &     2.18 r
+  D_Path/ALU_inst/sub_9/U186/ZN (NAND3_X1)                0.07 &     2.26 f
+  D_Path/ALU_inst/sub_9/U196/ZN (NAND2_X1)                0.07 &     2.33 r
+  D_Path/ALU_inst/sub_9/U193/ZN (NAND3_X1)                0.08 &     2.41 f
+  D_Path/ALU_inst/sub_9/U203/ZN (NAND2_X1)                0.08 &     2.48 r
+  D_Path/ALU_inst/sub_9/U176/ZN (NAND3_X1)                0.06 &     2.54 f
+  D_Path/ALU_inst/sub_9/U210/ZN (NAND2_X1)                0.07 &     2.61 r
+  D_Path/ALU_inst/sub_9/U207/ZN (NAND3_X1)                0.08 &     2.69 f
+  D_Path/ALU_inst/sub_9/U217/ZN (NAND2_X1)                0.08 &     2.77 r
+  D_Path/ALU_inst/sub_9/U162/ZN (NAND3_X1)                0.08 &     2.85 f
+  D_Path/ALU_inst/sub_9/U227/ZN (NAND2_X1)                0.08 &     2.93 r
+  D_Path/ALU_inst/sub_9/U158/ZN (NAND3_X1)                0.08 &     3.01 f
+  D_Path/ALU_inst/sub_9/U236/ZN (NAND2_X1)                0.08 &     3.09 r
+  D_Path/ALU_inst/sub_9/U46/ZN (NAND3_X1)                 0.08 &     3.17 f
+  D_Path/ALU_inst/sub_9/U246/ZN (NAND2_X1)                0.08 &     3.24 r
+  D_Path/ALU_inst/sub_9/U243/ZN (NAND3_X1)                0.08 &     3.33 f
+  D_Path/ALU_inst/sub_9/U257/ZN (NAND2_X1)                0.08 &     3.40 r
+  D_Path/ALU_inst/sub_9/U254/ZN (NAND3_X1)                0.08 &     3.48 f
+  D_Path/ALU_inst/sub_9/U268/ZN (NAND2_X1)                0.07 &     3.55 r
+  D_Path/ALU_inst/sub_9/U265/ZN (NAND3_X1)                0.08 &     3.63 f
+  D_Path/ALU_inst/sub_9/U278/ZN (NAND2_X1)                0.08 &     3.71 r
+  D_Path/ALU_inst/sub_9/U54/ZN (NAND3_X1)                 0.08 &     3.79 f
+  D_Path/ALU_inst/sub_9/U288/ZN (NAND2_X1)                0.07 &     3.86 r
+  D_Path/ALU_inst/sub_9/U61/ZN (NAND3_X1)                 0.08 &     3.94 f
+  D_Path/ALU_inst/sub_9/U299/ZN (NAND2_X1)                0.07 &     4.01 r
+  D_Path/ALU_inst/sub_9/U64/ZN (NAND3_X1)                 0.08 &     4.09 f
+  D_Path/ALU_inst/sub_9/U309/ZN (NAND2_X1)                0.07 &     4.16 r
+  D_Path/ALU_inst/sub_9/U65/ZN (NAND3_X1)                 0.08 &     4.24 f
+  D_Path/ALU_inst/sub_9/U320/ZN (NAND2_X1)                0.07 &     4.31 r
+  D_Path/ALU_inst/sub_9/U63/ZN (NAND3_X1)                 0.08 &     4.39 f
+  D_Path/ALU_inst/sub_9/U331/ZN (NAND2_X1)                0.07 &     4.46 r
+  D_Path/ALU_inst/sub_9/U62/ZN (NAND3_X1)                 0.08 &     4.55 f
+  D_Path/ALU_inst/sub_9/U341/ZN (NAND2_X1)                0.08 &     4.63 r
+  D_Path/ALU_inst/sub_9/U66/ZN (NAND3_X1)                 0.08 &     4.70 f
+  D_Path/ALU_inst/sub_9/U352/ZN (NAND2_X1)                0.08 &     4.78 r
+  D_Path/ALU_inst/sub_9/U75/ZN (NAND3_X1)                 0.07 &     4.85 f
+  D_Path/ALU_inst/sub_9/U159/ZN (NAND2_X1)                0.07 &     4.92 r
+  D_Path/ALU_inst/sub_9/U45/ZN (NAND3_X1)                 0.07 &     5.00 f
+  D_Path/ALU_inst/sub_9/U165/ZN (NAND2_X1)                0.08 &     5.07 r
+  D_Path/ALU_inst/sub_9/U73/ZN (NAND3_X1)                 0.08 &     5.15 f
+  D_Path/ALU_inst/sub_9/U78/ZN (NAND2_X1)                 0.08 &     5.23 r
+  D_Path/ALU_inst/sub_9/U81/ZN (NAND3_X1)                 0.08 &     5.32 f
+  D_Path/ALU_inst/sub_9/U84/ZN (NAND2_X1)                 0.08 &     5.39 r
+  D_Path/ALU_inst/sub_9/U44/ZN (NAND3_X1)                 0.08 &     5.47 f
+  D_Path/ALU_inst/sub_9/U95/ZN (NAND2_X1)                 0.08 &     5.55 r
+  D_Path/ALU_inst/sub_9/U199/ZN (NAND3_X1)                0.08 &     5.63 f
+  D_Path/ALU_inst/sub_9/U104/ZN (NAND2_X1)                0.08 &     5.71 r
+  D_Path/ALU_inst/sub_9/U49/ZN (NAND3_X1)                 0.08 &     5.79 f
+  D_Path/ALU_inst/sub_9/U113/ZN (NAND2_X1)                0.08 &     5.87 r
+  D_Path/ALU_inst/sub_9/U182/ZN (NAND3_X1)                0.08 &     5.95 f
+  D_Path/ALU_inst/sub_9/U123/ZN (NAND2_X1)                0.08 &     6.02 r
+  D_Path/ALU_inst/sub_9/U126/ZN (NAND3_X1)                0.08 &     6.11 f
+  D_Path/ALU_inst/sub_9/U134/ZN (NAND2_X1)                0.08 &     6.18 r
+  D_Path/ALU_inst/sub_9/U137/ZN (NAND3_X1)                0.09 &     6.27 f
+  D_Path/ALU_inst/sub_9/U87/ZN (XNOR2_X1)                 0.11 &     6.38 r
+  D_Path/ALU_inst/sub_9/U145/ZN (INV_X1)                  0.03 &     6.41 f
+  D_Path/ALU_inst/sub_9/DIFF[29] (ALU_DW01_sub_0)         0.00       6.41 f
+  D_Path/ALU_inst/U30/ZN (AOI22_X1)                       0.12 &     6.53 r
+  D_Path/ALU_inst/U29/ZN (OAI211_X1)                      0.22 &     6.75 f
+  D_Path/ALU_inst/aluresult[29] (ALU)                     0.00       6.75 f
+  D_Path/aluresult[29] (data_path)                        0.00       6.75 f
+  aluresult[29] (out)                                     0.00 &     6.75 f
+  data arrival time                                                  6.75
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.40       7.40
+  data required time                                                 7.40
+  --------------------------------------------------------------------------
+  data required time                                                 7.40
+  data arrival time                                                 -6.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+1
