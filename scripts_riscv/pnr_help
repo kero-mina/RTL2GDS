@@ -1,0 +1,158 @@
+##############################################
+########### 2. Floorplan #####################
+##############################################
+
+##AH## ## To show design-specific blocks
+##AH## gui_set_highlight_options -current_color yellow
+##AH## change_selection [get_cells   alu_unit/*]
+
+##AH## gui_set_highlight_options -current_color blue
+##AH## change_selection [get_cells   ALU_Control_unit/*]
+
+##AH## gui_set_highlight_options -current_color green
+##AH## change_selection [get_cells   datamem/*]
+
+##AH## gui_set_highlight_options -current_color orange
+##AH## change_selection [get_cells   reg_file/*]
+
+## ASSESSMENT
+#############
+## Analyze Congestion
+#route_fp_proto -congestion_map_only -effort medium    
+# View Congestion map : In GUI, Route > Global Route Congestion Map.
+
+## Analyze Timing
+#extract_rc; # Improves accuracy of timing after updated GR.
+
+#report_timing -nosplit; # For Worst Setup violation report
+#report_timing -nosplit -delay_type min; # For Worst Hold violation report
+
+#report_constraint -all_violators -nosplit -max_delay; # For all Setup violation report
+#report_constraint -all_violators -nosplit -min_delay; # For all Hold violations report
+
+##Based on your assessment, you may need to do any of the following fixes
+
+## FIXES
+########
+## You can use one or all of the follwoing based on your need.
+#   set_fp_placement_strategy -virtual_IPO on 
+#
+#   create_bounds -name "temp" -coordinate {55 0 270 270} datamem
+#   create_bounds -name "temp1" -coordinate {0 0 104 270} reg_file
+#
+#   set_congestion_options -max_util 0.4 -coordinate {x1 y1 x2 y2}; # if cell density is causing congestion.
+#
+#   create_placement_blockage -name PB -type hard -bbox {x1 y1 x2 y2}
+#
+#   set_fp_placement_strategy -congestion_effort high
+#
+## Then you need to re-run create_fp_placement
+#   create_fp_placement -incremental; 
+## Note:  use -incremental option if you want to refine the current virtual placement. Don't use it if you want to re-place the design from scratch 
+
+## If there still congestion, change ignored layers, if it is still there, increase floorplan area.
+
+
+##############################################
+########### 4. Placement #####################
+##############################################
+
+#### Scenario Creation ####create_scenario pw
+#### Scenario Creation ####set_operating_conditions worst_low
+#### Scenario Creation ####set_tlu_plus_files -max_tluplus $tlupmax \
+#### Scenario Creation ####                   -min_tluplus $tlupmin \
+#### Scenario Creation ####     		   -tech2itf_map $tech2itf
+#### Scenario Creation ####
+#### Scenario Creation ####set_scenario_options -leakage_power true; #If we need to optimize leakage power, more effective for multi-Vth designs.
+#### Scenario Creation ####set power_default_toggle_rate 0.003
+#### Scenario Creation ####set_scenario_options -dynamic_power true
+#### Scenario Creation ####
+#### Scenario Creation ####source  ../syn/cons/cons.tcl
+#### Scenario Creation ####set_propagated_clock [get_clocks clk]
+#### Scenario Creation ####
+#### Scenario Creation ####set_optimize_pre_cts_power_options -low_power_placement true
+#### Scenario Creation ####
+#### Scenario Creation ####report_scenario_options
+
+## ASSESSMENT
+#############
+## Open Congestion Map. == > If congested, improve congestion similar to floorplanning.
+## Report Timing 
+
+## FIXES
+########
+# For seriuos congestion issue use the following commands:
+#   set placer_enable_enhanced_router TRUE; # enabling the actual GR instead of GR estimator. Increased run time!
+#   refine_placement ==> Optimizes congestion only
+
+# If there are violating timing paths, apply optimization -focus- as needed: 
+#   report_path_group
+#   group_path -name clk -critical_range 1 -weight 5
+
+#The  psynopt  command  performs incremental preroute or postroute opti-
+#mization on the current design. Performs incremental timing-driven  (setup timing, by default) logic optimization with placement legalization.
+# It considers other targets using different options
+# ex : psynopt -no_design_rule | -only_design_rule | -size_only ==> Used for Focused placment optimization
+
+
+##############################################
+########### 5. CTS       #####################
+##############################################
+## Selection of CTS cell
+
+#set_clock_tree_references -references [get_lib_cells */BUF*] 
+#set_clock_tree_references -references [get_lib_cells */INV*] 
+
+## Selection of CTO cells
+#set_clock_tree_references -sizing_only -references "BEST_PRACTICE_buffers_for_CTS_CTO_sizing"
+#set_clock_tree_references -delay_insertion_only -references "BEST_PRACTICE_cels_for_CTS_CTO_delay_insertion" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
