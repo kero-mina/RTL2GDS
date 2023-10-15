@@ -1,0 +1,58 @@
+#@ # 
+#@ # Running fm_shell Version G-2012.06-SP2 for amd64 -- Aug 23, 2012
+#@ # Date:   Sun Oct 14 16:42:54 2018
+#@ # Run by: ahesham@localhost.localdomain
+#@ 
+
+source /usr/synopsys/Formality/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /usr/synopsys/Formality/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" ||      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /usr/synopsys/Formality/admin/setup/.synopsys_fm.setup
+
+set_svf -append { /home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/default.svf } 
+read_verilog -container r -libname WORK -01 { /home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/top.v } 
+read_db { /home/ahesham/Desktop/Teaching/ref_flow/fm/NLDM/NangateOpenCellLibrary_ff1p25v0c.db /home/ahesham/Desktop/Teaching/ref_flow/fm/NLDM/NangateOpenCellLibrary_ss0p95v125c.db } 
+set_top r:/WORK/top 
+read_verilog -container i -libname WORK -01 { /home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/output/top.v } 
+read_db { /home/ahesham/Desktop/Teaching/ref_flow/fm/NLDM/NangateOpenCellLibrary_ff1p25v0c.db /home/ahesham/Desktop/Teaching/ref_flow/fm/NLDM/NangateOpenCellLibrary_ss0p95v125c.db } 
+set_top i:/WORK/top 
+match 
+verify 

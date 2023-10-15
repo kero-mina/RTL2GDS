@@ -1,0 +1,25 @@
+1
+Loading verilog file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/top.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/data_path.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/register_32_bits.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/mux3_1.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/adder_32_bits.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/regfile_32_bits.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/immediate_generate.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/mux2_1.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/ALU.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/control_path.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/main_decoder.v'
+Loading include file '/home/ahesham/Desktop/ITI_PHASE1/RISCV_kero/rtl/ALU_decoder.v'
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+Process terminated by hangup.
+

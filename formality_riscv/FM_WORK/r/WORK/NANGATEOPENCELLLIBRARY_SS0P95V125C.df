@@ -1,0 +1,276 @@
+AND2_X1#PWR
+  port ZN : no power_down_function
+AND2_X2#PWR
+  port ZN : no power_down_function
+AND2_X4#PWR
+  port ZN : no power_down_function
+AND3_X1#PWR
+  port ZN : no power_down_function
+AND3_X2#PWR
+  port ZN : no power_down_function
+AND3_X4#PWR
+  port ZN : no power_down_function
+AND4_X1#PWR
+  port ZN : no power_down_function
+AND4_X2#PWR
+  port ZN : no power_down_function
+AND4_X4#PWR
+  port ZN : no power_down_function
+AOI21_X1#PWR
+  port ZN : no power_down_function
+AOI21_X2#PWR
+  port ZN : no power_down_function
+AOI21_X4#PWR
+  port ZN : no power_down_function
+AOI22_X1#PWR
+  port ZN : no power_down_function
+AOI22_X2#PWR
+  port ZN : no power_down_function
+AOI22_X4#PWR
+  port ZN : no power_down_function
+AOI211_X1#PWR
+  port ZN : no power_down_function
+AOI211_X2#PWR
+  port ZN : no power_down_function
+AOI211_X4#PWR
+  port ZN : no power_down_function
+AOI221_X1#PWR
+  port ZN : no power_down_function
+AOI221_X2#PWR
+  port ZN : no power_down_function
+AOI221_X4#PWR
+  port ZN : no power_down_function
+AOI222_X1#PWR
+  port ZN : no power_down_function
+AOI222_X2#PWR
+  port ZN : no power_down_function
+AOI222_X4#PWR
+  port ZN : no power_down_function
+BUF_X1#PWR
+  port Z : no power_down_function
+BUF_X2#PWR
+  port Z : no power_down_function
+BUF_X4#PWR
+  port Z : no power_down_function
+BUF_X8#PWR
+  port Z : no power_down_function
+BUF_X16#PWR
+  port Z : no power_down_function
+BUF_X32#PWR
+  port Z : no power_down_function
+CLKBUF_X1#PWR
+  port Z : no power_down_function
+CLKBUF_X2#PWR
+  port Z : no power_down_function
+CLKBUF_X3#PWR
+  port Z : no power_down_function
+CLKGATETST_X1#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATETST_X2#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATETST_X4#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATETST_X8#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATE_X1#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATE_X2#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATE_X4#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+CLKGATE_X8#PWR
+  port GCK : no power_down_function
+  cell *lat.00* : no power_down_function
+DFFRS_X1#PWR
+  cell *dff.00* : no power_down_function
+DFFRS_X2#PWR
+  cell *dff.00* : no power_down_function
+DFFR_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DFFR_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DFFS_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DFFS_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DFF_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DFF_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+DLH_X1#PWR
+  cell *lat.00* : no power_down_function
+DLH_X2#PWR
+  cell *lat.00* : no power_down_function
+DLL_X1#PWR
+  cell *lat.00* : no power_down_function
+DLL_X2#PWR
+  cell *lat.00* : no power_down_function
+FA_X1#PWR
+  port CO : no power_down_function
+  port S : no power_down_function
+HA_X1#PWR
+  port CO : no power_down_function
+  port S : no power_down_function
+INV_X1#PWR
+  port ZN : no power_down_function
+INV_X2#PWR
+  port ZN : no power_down_function
+INV_X4#PWR
+  port ZN : no power_down_function
+INV_X8#PWR
+  port ZN : no power_down_function
+INV_X16#PWR
+  port ZN : no power_down_function
+INV_X32#PWR
+  port ZN : no power_down_function
+LOGIC0_X1#PWR
+  port Z : no power_down_function
+LOGIC1_X1#PWR
+  port Z : no power_down_function
+MUX2_X1#PWR
+  port Z : no power_down_function
+MUX2_X2#PWR
+  port Z : no power_down_function
+NAND2_X1#PWR
+  port ZN : no power_down_function
+NAND2_X2#PWR
+  port ZN : no power_down_function
+NAND2_X4#PWR
+  port ZN : no power_down_function
+NAND3_X1#PWR
+  port ZN : no power_down_function
+NAND3_X2#PWR
+  port ZN : no power_down_function
+NAND3_X4#PWR
+  port ZN : no power_down_function
+NAND4_X1#PWR
+  port ZN : no power_down_function
+NAND4_X2#PWR
+  port ZN : no power_down_function
+NAND4_X4#PWR
+  port ZN : no power_down_function
+NOR2_X1#PWR
+  port ZN : no power_down_function
+NOR2_X2#PWR
+  port ZN : no power_down_function
+NOR2_X4#PWR
+  port ZN : no power_down_function
+NOR3_X1#PWR
+  port ZN : no power_down_function
+NOR3_X2#PWR
+  port ZN : no power_down_function
+NOR3_X4#PWR
+  port ZN : no power_down_function
+NOR4_X1#PWR
+  port ZN : no power_down_function
+NOR4_X2#PWR
+  port ZN : no power_down_function
+NOR4_X4#PWR
+  port ZN : no power_down_function
+OAI21_X1#PWR
+  port ZN : no power_down_function
+OAI21_X2#PWR
+  port ZN : no power_down_function
+OAI21_X4#PWR
+  port ZN : no power_down_function
+OAI22_X1#PWR
+  port ZN : no power_down_function
+OAI22_X2#PWR
+  port ZN : no power_down_function
+OAI22_X4#PWR
+  port ZN : no power_down_function
+OAI33_X1#PWR
+  port ZN : no power_down_function
+OAI211_X1#PWR
+  port ZN : no power_down_function
+OAI211_X2#PWR
+  port ZN : no power_down_function
+OAI211_X4#PWR
+  port ZN : no power_down_function
+OAI221_X1#PWR
+  port ZN : no power_down_function
+OAI221_X2#PWR
+  port ZN : no power_down_function
+OAI221_X4#PWR
+  port ZN : no power_down_function
+OAI222_X1#PWR
+  port ZN : no power_down_function
+OAI222_X2#PWR
+  port ZN : no power_down_function
+OAI222_X4#PWR
+  port ZN : no power_down_function
+OR2_X1#PWR
+  port ZN : no power_down_function
+OR2_X2#PWR
+  port ZN : no power_down_function
+OR2_X4#PWR
+  port ZN : no power_down_function
+OR3_X1#PWR
+  port ZN : no power_down_function
+OR3_X2#PWR
+  port ZN : no power_down_function
+OR3_X4#PWR
+  port ZN : no power_down_function
+OR4_X1#PWR
+  port ZN : no power_down_function
+OR4_X2#PWR
+  port ZN : no power_down_function
+OR4_X4#PWR
+  port ZN : no power_down_function
+SDFFRS_X1#PWR
+  cell *dff.00* : no power_down_function
+SDFFRS_X2#PWR
+  cell *dff.00* : no power_down_function
+SDFFR_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+SDFFR_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+SDFFS_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+SDFFS_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+SDFF_X1#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+SDFF_X2#PWR
+  port QN : no power_down_function
+  cell *dff.00* : no power_down_function
+TBUF_X1#PWR
+  port Z : no power_down_function
+TBUF_X2#PWR
+  port Z : no power_down_function
+TBUF_X4#PWR
+  port Z : no power_down_function
+TBUF_X8#PWR
+  port Z : no power_down_function
+TBUF_X16#PWR
+  port Z : no power_down_function
+TINV_X1#PWR
+  port ZN : no power_down_function
+TLAT_X1#PWR
+  cell *lat.00* : no power_down_function
+XNOR2_X1#PWR
+  port ZN : no power_down_function
+XNOR2_X2#PWR
+  port ZN : no power_down_function
+XOR2_X1#PWR
+  port Z : no power_down_function
+XOR2_X2#PWR
+  port Z : no power_down_function
