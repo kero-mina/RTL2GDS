@@ -19,3 +19,6 @@ synthesize_fp_rail -> synthesizes power network based on specified constraints
 preroute_standard_cells -> connects standard cell power and ground pins to the power and ground of rings and straps
 
 Rest of commands are commented on in the script itself
+
+![pnr](![AFTER CT routing](https://github.com/user-attachments/assets/17fcee2b-b588-4898-ac23-16e61233e7d1)
+)
