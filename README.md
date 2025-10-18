@@ -20,5 +20,5 @@ preroute_standard_cells -> connects standard cell power and ground pins to the p
 
 Rest of commands are commented on in the script itself
 
-![AFTER CT routing](https://github.com/user-attachments/assets/17fcee2b-b588-4898-ac23-16e61233e7d1)
+
 
