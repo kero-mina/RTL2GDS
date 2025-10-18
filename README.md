@@ -1,5 +1,3 @@
-// Note the information here can be false or true depending on my knowledge but will be updated as soon as possible if there is any false information
-
 Here are some comments for pnr.tcl script and the commands in it.
 
 Milky way library is a database library which contains database information about a certain technology file to be used more than once in digital implementation in IC compiler tool
@@ -20,5 +18,4 @@ synthesize_fp_rail -> synthesizes power network based on specified constraints
 
 preroute_standard_cells -> connects standard cell power and ground pins to the power and ground of rings and straps
 
-//Rest of commands are commented on in the script itself
-//Thanks
+Rest of commands are commented on in the script itself
